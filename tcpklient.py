@@ -3,7 +3,7 @@ import socket
 HEADER = 64
 PORT = 5050
 FORMAT = 'utf-8'
-DISCONNECT_MASSAGE = "!DISCONNECT!"
+DISCONNECT_MASSAGE = "!DISCONNECTklient"
 SERVER = input("Please enter server IP address:\n")
 MASSAGE = input("Please enter your message:\n")
 ADDR = (SERVER, PORT)
@@ -20,3 +20,5 @@ def send(msg):
     client.send(message)
 
 send(MASSAGE)
+
+send(DISCONNECT_MASSAGE)
