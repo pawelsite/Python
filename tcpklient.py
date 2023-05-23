@@ -1,2 +1,1 @@
-import socket
-
+print("It works!")
